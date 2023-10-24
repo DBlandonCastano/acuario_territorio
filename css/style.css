@@ -1,0 +1,222 @@
+*{
+       padding: 0;
+       margin: 0;
+       text-decoration: none;
+       list-style: none;
+       box-sizing: border-box;
+}
+nav{
+       position: fixed;
+       background: rgb(84, 131, 139);     
+       height: 80px;
+       width: 100%;
+}
+.enlace{
+       position: absolute;
+       padding: 20px 50px;
+}
+.logo{
+       height: 50px; 
+       width: 50px;      
+}
+
+nav ul{
+       float: right;
+       margin-right: 40px;
+}
+nav ul li{
+       display: inline-block;
+       line-height: 80px;
+       margin: 0 5px;
+}
+nav ul li a{
+       color: #f7f6f8;
+       font-size: 18px;
+       padding: 7px 13px;
+       border-radius: 10px;
+       text-transform: uppercase;
+
+}
+li  a:hover{
+       background-color: #170538;
+       transition:0.5s;
+}
+.checkBtn{
+       font-size: 30px;
+       color: #DEDED8;
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+       cursor: pointer;
+       display: none;
+}
+#check{
+       display: none;
+}
+
+div {
+       width: 250px;
+       height: 150px;
+       
+}
+img {
+       width: 250px;
+       height: 150px;
+       border-radius: 25%;
+       box-shadow: 5px 8px 12px;
+}
+.caja1{
+       position: absolute;
+       top:120px;
+       bottom:0;
+       right: 0;
+       left: 100px;
+}
+.caja2{
+       position: absolute;
+       top:120px;
+       bottom:0;
+       right: 0;
+       left: 1000px;
+}
+
+.caja3{
+       position: absolute;
+       top:350px;
+       bottom:0;
+       right: 0;
+       left: 210px;
+}
+.caja4{
+       position: absolute;
+       top:350px;
+       bottom:0;
+       right: 0;
+       left: 900px;
+}
+div a h1{
+       font-size: 25px;
+       text-align: center;
+       text-transform: uppercase;
+}
+
+
+/*.enlace1{
+       position:absolute;
+       size: 10px 20px;
+       padding: 40px 100px;
+       /*display: inline-block;
+}
+.img1{
+       height: 150px;   
+       width: 250px;
+       border-radius: 25%; 
+       box-shadow: 5px 8px 12px; 
+}
+.texto1{
+       color:rgb(54, 2, 2) ;
+       text-align: center;
+       text-transform: uppercase;
+       
+}
+.enlace2{
+       position: absolute;
+       size: 10px 20px;
+       padding: 40px 1000px;
+       
+}
+.img2{
+       height: 150px;  
+       width: 250px; 
+       border-radius: 25%; 
+       box-shadow: 5px 8px 12px; 
+}
+.texto2{
+       color:rgb(54, 2, 2) ;
+       text-align: center;
+       text-transform: uppercase;
+       
+}
+.enlace3{
+       position: absolute;
+       size: 10px 20px;
+       padding: 300px 200px;
+}
+.img3{
+       height: 150px;   
+       width: 250px;
+       border-radius: 25%; 
+       box-shadow: 5px 8px 12px; 
+}
+.texto3{
+       color:rgb(54, 2, 2) ;
+       text-align: center;
+       text-transform: uppercase;
+       
+}
+.enlace4{
+       position: absolute;
+       size: 10px 30 px;
+       padding: 300px 900px;
+}
+.img4{
+       height: 150px;
+       width: 250px;
+       border-radius: 25%;
+       box-shadow: 5px 8px 12px;
+}
+.texto4{
+       color:rgb(54, 2, 2) ;
+       text-align: center;
+       text-transform: uppercase;
+}*/
+section{
+       background:url(/img/5.jpg) no-repeat;
+       /*background-image: url("/img/fondo-abstracto.avif", "/img/5.jpg");*/
+       background-position: center center;
+       background-size:cover;
+       height: calc(100vh);
+}
+
+
+@media(max-width:950px){
+       .enlace{
+              padding-left: 20px;
+       }
+       nav ul li a{
+              font-size: 16px;
+       }
+       
+
+}
+@media(max-width:850px){
+       .checkBtn{
+              display: block;
+       }
+       ul{
+              position: fixed;
+              width: 100%;
+              height: 100vh;
+              background: #372f44;
+              top: 80px;
+              left: -100%;
+              text-align: center;
+              transition: all .5s;
+       }
+       nav ul li{
+              display: block;
+              margin: 50px;
+              line-height: 30px;
+       }
+       nav ul li a{
+              font-size: 20px;
+       }
+       li a:hover{
+              background: none;
+              color: red;
+       }
+       #check:checked ~ ul{
+              left: 0;
+       }
+
+}

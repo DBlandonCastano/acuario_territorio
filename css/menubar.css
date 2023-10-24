@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    /*background: rgb(84, 131, 139);*/
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("../../media/examples/lizard.png");
+                 
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 50px; 
+    width: 50px;      
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #f7f6f8;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+li  a:hover{
+    background-color: #170538;
+    transition:0.5s;
+}
+.checkBtn{
+    font-size: 30px;
+    color: #DEDED8;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.columna1{
+       position: absolute;
+       top:90px;
+       bottom:0;
+       right: 0;
+       left: 10px;
+       width: 250px;
+       height: 81%;
+       background-color: rgba(71, 139, 141, 0.3);
+}
+.imgcolumna1{
+    height: 200px;
+    width: 250px;
+}
+h1{
+    padding:15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fcf9f9;
+}
+h2{
+   padding: 3px; 
+   text-align: center;
+   font-size: 24px;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+}
+.galery{
+    position: absolute;
+    top:70px;
+    bottom:0;
+    right:0;
+    left: 270px;
+    width: 900PX; 
+}
+div div{
+    position: relative;
+}
+.galery div img{
+    height: 150px;
+    padding: 2px 2px;
+    width: 280px;
+    border: 5px solid rgb(240, 255, 255);
+    box-shadow: inset 5em 1em rgb(43, 42, 41);
+}
+.galery div img:hover {
+    height: 155px;
+    width: 285px;
+}
+.columna2{
+    position: relative;
+    top:90px;
+    bottom:0;
+    right: 0;
+    left: 1127px;
+    width: 230px;
+    height: 81%;
+    background-color: rgba(32, 120, 136, 0.527);
+    color: #f7f6f8;
+}
+
+.gmap_iframe{
+    height: 20px;
+}
+/*.mapouter{
+    position: relative;
+    top:100;
+    bottom:0;
+    right: 0;
+    left: 1127px;
+    width: 230px;
+    height: 250px;
+    
+}*/
+
+section{
+    /*background-color: rgba(20, 11, 34);*/
+    background-image: url("/img/fondo-abstracto.avif");
+    background-position: center center;
+    background-size:cover;
+    height: calc(100vh);
+}
+@media(max-width:950px){
+    .enlace{
+           padding-left: 20px;
+    }
+    nav ul li a{
+           font-size: 16px;
+    }
+    
+
+}
+@media(max-width:850px){
+    .checkBtn{
+           display: block;
+    }
+    ul{
+           position: fixed;
+           width: 100%;
+           height: 100vh;
+           background: #372f44;
+           top: 80px;
+           left: -100%;
+           text-align: center;
+           transition: all .5s;
+    }
+    nav ul li{
+           display: block;
+           margin: 50px;
+           line-height: 30px;
+    }
+    nav ul li a{
+           font-size: 20px;
+    }
+    li a:hover{
+           background: none;
+           color: red;
+    }
+    #check:checked ~ ul{
+           left: 0;
+    }
+
+}
