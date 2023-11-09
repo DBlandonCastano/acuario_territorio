@@ -93,19 +93,22 @@ p{
     left: 270px;
     width: 900PX; 
 }
-div div{
+.galery div{
     position: relative;
 }
-.galery div img{
+.galery img{
     height: 150px;
     padding: 2px 2px;
     width: 280px;
     border: 5px solid rgb(240, 255, 255);
     box-shadow: inset 5em 1em rgb(43, 42, 41);
+    transition:transform 0.5s;
 }
-.galery div img:hover {
-    height: 155px;
+.galery  a:hover img {
+    /*height: 155px;
     width: 285px;
+    filter: blur(2px);*/
+    transform: rotate(10deg) scale(1.1);
 }
 .columna2{
     position: relative;
@@ -132,7 +135,6 @@ div div{
     height: 250px;
     
 }*/
-
 section{
     /*background-color: rgba(20, 11, 34);*/
     background-image: url("/img/fondo-abstracto.avif");
@@ -140,6 +142,28 @@ section{
     background-size:cover;
     height: calc(100vh);
 }
+.light-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0,0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+.light-box a img{
+    width: 60vw;
+    height: 50vh;
+}
+.light-box:target{
+    transform: scale(1);
+    
+}
+
 @media(max-width:950px){
     .enlace{
            padding-left: 20px;
